@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorie</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="categorie.css" rel="stylesheet">
+    <!--library voor icones-->
+    <link href="../css/all.css" rel="stylesheet">
+    <script src="../js/colors.js"></script>
+</head>
+<body>
+    <!--start upper bar-->
+    <div>
+        <nav class="upper-bar">
+            <div class="container">
+                <div class="logo">
+                    <div class="beltech">
+                        <span>T</span><p>B</p>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li id="login">
+                            <i class="fa fa-user icoontje"></i>
+                            <ol>
+                                <li id="acount">
+                                    <a href="#">
+                                        <i class="far fa-id-card"></i>
+                                        <span>Acount</span>
+                                    </a>
+                                </li>
+                                <li id="aanmelden">
+                                    <a href="../login/login.html"> 
+                                        <i class="fas fa-sign-in-alt"></i>
+                                        <span>aanmeled</span>
+                                    </a>
+                                </li>
+                                <li id="afmelden">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <a href="#">Afmelden</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <i aria-hidden="true" class="fa fa-shopping-cart icoontje"></i>
+                            <ol>
+                                <li>
+                                    <a href="../winkelwagen/winkelwagen.html">
+                                        <i class="fab fa-opencart"></i>
+                                        <span>cart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-box"></i>
+                                        <span>order</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end upper bar  -->
+    <!-- start lower-bar -->  
+    <main>
+        <!-- start lower-bar --> 
+        <nav class="lower-bar">
+            <input type="checkbox" id="toggler" class="toggler">
+            <label for="toggler" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <button class="searchButton" type="button"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." class="searchInput">
+            <ul>
+                <li><a href="../index.html" data-text="HOME">HOME</a></li>
+                <li><a href="categorie.html?Headset" data-text="HEADSETS">HEADSETS</a></li>
+                <li><a href="categorie.html?Toetsenbord" data-text="TOETSENBORDEN">TOETSENBORDEN</a></li>
+                <li><a href="categorie.html?Muis" data-text="MUIZEN">MUIZEN</a></li>
+                <li><a href="categorie.html?Laptop" data-text="LAPTOPS">LAPTOPS</a></li>
+            </ul>
+        </nav> 
+        <!-- end lower-bar  -->
+    </main>
+    <div class="tech-specs">
+
+    </div>
+    <!-- start footer  -->
+    <div class="footer">
+    </div>
+    <footer>
+        <div class="cont">
+            <div>
+                <div class="footer-r">
+                    <h4 class="footer-info">Account</h4>
+                    <ul class="footer-info-ul">
+                        <li><a class="footer-a" href="#">Acountbeheren</a></li>
+                        <li><a class="footer-a" href="#">Winkelwagen</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-logo">Informatie</h4>
+                    <ul class="footer-info-ul">
+                        <li><a class="footer-a" href="../OverOns/OverOns.html">Over ons</a></li>
+                        <li><a class="footer-a" href="#">klantenservice</a></li>
+                        <li><a class="footer-a" href="#">Betalen</a></li>
+                        <li><a class="footer-a" href="#">Verzending</a></li>
+                        <li><a class="footer-a" href="../algemeneVoorwaarden/voorwaarden.html">Algemene voorwaarden</a></li>
+                        <li><a class="footer-a" href="../retourVoorwaarden/retour.html">Retour voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-c">
+                <span><i class="fas fa-phone-alt"></i><span id="telNr">0495826311</span><i class="fas fa-copy">Copy</i></span>
+                <span><i class="fas fa-at"></i>Beltech@pxl.be</i><a href="mailto:rob.sannen@student.pxl.be"><i class="fas fa-envelope">Email us</i></a></span> 
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll  -->
+    <div class="scroll visible-sm">
+        <i class="fas fa-chevron-up naar-boven"></i>
+        <i class="fas fa-chevron-down naar-onder"></i>
+    </div>
+    <!-- end scroll -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.5.1.min.map"></script>
+    <script src="categorie.js"></script>
+    <script src="../js/global.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: var(--main-font-family);
+}
+:root{
+    --main-color: #44d62c;
+    --main-font-family: Tahoma;
+    --gray-color-1: #222;
+    --overly-back: rgba(0, 0, 0, 0.3);
+    --main-transition: all 0.5s ease-in-out;
+    --linear-transition: all 0.5s linear;
+    --blue-color: #3497db;
+    --rose-color: #e91e63;
+    --scroll-color: #44d62c;
+    --gray-color-2: #555555;
+    --gray-color-4: #777;
+    --gray-color-3: #999999;
+    --default-white: white;
+    --gray-color-4: #2c2c2c;
+    --gray-color-5: #d6d6d6;
+}
+@media (min-width: 576px){
+    body{
+        font-size: 20px;
+    }
+}
+.lower-bar{
+    position: relative;
+    background-color: var(--gray-color-1);
+}
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 992px){
+    main{
+        width: 80%;
+    }
+}
+main section{
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--gray-color-2);
+    margin-top: 50px;
+}
+
+/* Start quick-check-out */
+
+#quick-check-out{
+    color: var(--gray-color-5);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 7% 30px;
+    border-bottom: 2px solid var(--gray-color-2);
+    margin: 50px auto 0 auto;
+    background-color: var(--gray-color-1);
+}
+#quick-check-out div{
+    display: flex;
+    justify-content: center;
+}
+#quick-check-out div :nth-child(2){
+    margin-left: 15px;
+}
+#quick-check-out a{
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    color: var(--gray-color-1);
+    background-color: var(--main-color);
+    opacity: 1;
+    margin: auto;
+    padding: 0 10px;
+}
+
+#quick-check-out-price{
+    margin-left: 7px;
+}
+
+@media ( min-width : 576px)
+{     
+    #quick-check-out{
+        flex-direction:row;
+        justify-content: space-around;    
+        align-items: center;    
+        padding: 50px 7% 50px;
+    }
+    #quick-check-out p{
+        margin: unset;
+    }
+    #quick-check-out a{
+        margin:0 0 0 40px;
+        height: 30px;
+    }
+    #quick-check-out div{
+        margin: unset; 
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 0 10px;
+    }   
+}
+@media ( min-width : 992px){
+    #quick-check-out{
+        padding: 50px 12% 50px;
+    }
+}
+/* End quick-check-out */
+/* Start Img */
+
+main img{
+    height: 250px;
+    width: 100%;
+    object-fit:scale-down;
+}
+@media (min-width: 484px){
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .prijs{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 576px){
+    
+}
+@media (min-width: 768px){
+    
+    main img{
+        width: 20%;
+        
+    }
+    .details{
+        width: 40%;
+        align-self: center;
+    }
+    .prijs{
+        width: 30%;
+        align-self: center;
+    }
+}
+
+
+/* End Img */
+/* start details */
+
+.details{
+    padding: 20px 3vw 10px;
+}
+.details ul{
+    color: var(--gray-color-3);
+    font-size: 14px;
+    padding-left: 12px;
+}
+@media (min-width: 576px){
+    .details ul{
+        font-size: 17px;
+    }
+}
+/* end details */
+/* start prijs */
+
+.prijs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 3vw 0;
+}
+.prijs div:nth-child(2){
+    margin-top: 15px;
+}
+.prijs div:first-child select, i{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.prijs div:nth-child(2) i{
+    margin-left: 20px;
+    color: red;
+}
+.prijs div:nth-child(2) select{
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--main-color);
+    margin-left: 15px;
+}
+.prijs div:nth-child(2) select > option{
+    background-color: black;
+    color: white;
+}
+/* end prijs */
+/* start chek-out */
+
+#check-out{
+    padding: 50px 5% 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-color-1);
+}
+@media (min-width: 992px){
+    #check-out{
+        padding: 70px 20% 35px;
+        
+    }
+}
+#check-out div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#check-out a{
+    text-align: center;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+
+/* end check-out */
+footer::before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray-color-2);
+    margin-bottom: 20px;
+}

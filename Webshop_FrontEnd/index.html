@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>bel tech</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--library voor icones-->
+    <link href="css/all.css" rel="stylesheet">
+    <script src="js/colors.js"></script>
+</head>
+    <body>
+        <!--start upper bar-->
+            <div>
+                <nav class="upper-bar">
+                    <div class="container">
+                        <div class="logo">
+                            <div class="beltech">
+                                <span>T</span><p>B</p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li id="login">
+                                    <i class="fa fa-user icoontje"></i>
+                                    <ol>
+                                        <li id="acount">
+                                            <a href="#">
+                                                <i class="far fa-id-card"></i>
+                                                <span>Account</span>
+                                            </a>
+                                        </li>
+                                        <li id="aanmelden">
+                                            <a href="login/login.html"> 
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                <span>Aanmelden</span>
+                                            </a>
+                                        </li>
+                                        <li id="afmelden">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <a href="#">Afmelden</a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <i aria-hidden="true" class="fa fa-shopping-cart icoontje"></i>
+                                    <ol>
+                                        <li>
+                                            <a href="winkelwagen/winkelwagen.html">
+                                                <i class="fab fa-opencart"></i>
+                                                <span>Cart</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-box"></i>
+                                                <span>Order</span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        <!-- end upper bar  -->
+        <!-- start header -->
+        <header>
+            <!-- start lower-bar -->
+            <nav class="lower-bar">
+                <input type="checkbox" id="toggler" class="toggler">
+                <label for="toggler" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <button class="searchButton" type="button"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search.." class="searchInput">
+                <ul>
+                    <li class="active"><a href="../index.html" data-text="HOME">HOME</a></li>
+                    <li><a href="categorie/categorie.html?Headset" data-text="HEADSETS">HEADSETS</a></li>
+                    <li><a href="categorie/categorie.html?Toetsenbord" data-text="TOETSENBORDEN">TOETSENBORDEN</a></li>
+                    <li><a href="categorie/categorie.html?Muis" data-text="MUIZEN">MUIZEN</a></li>
+                    <li><a href="categorie/categorie.html?Laptop" data-text="LAPTOPS">LAPTOPS</a></li>
+                </ul>
+            </nav>
+            <span class="prev visible-lg"><i class="fas fa-chevron-left"></i></span>
+            <span class="next visible-lg"><i class="fas fa-chevron-right"></i></span>
+            <div class="slider">
+                <div class="slider-item active home">
+                    <div class="product">
+                        <span>RAZER BLADE PRO 17</span>
+                        <span class="hidden-xs">Ultra-Fast. Ultra-thin. Ultra-Powerful. Now with GeForce RTX™ 30 Series.</span>
+                        <span><a href="prodetails/prodetails.html?7#Laptop">koop nu</a></span>
+                    </div>
+                </div>
+                <div class="slider-item home">
+                    <div class="product">
+                        <span>Razer Kraken Tournament Edition - Green</span>
+                    <span class="hidden-xs">Wired Gaming Headset with USB Audio Controller</span>
+                    <span class="by"><a href="#">koop nu</a></span>
+                </div>
+                </div>
+                <div class="slider-item home">
+                    <div class="product">
+                        <span>Razer Viper 8K<sup>HZ</sup></span>
+                        <span class="hidden-xs">Ambidextrous Esports Gaming Mouse with 8000Hz Polling Rate</span>
+                        <span><a href="#">by now</a></span>
+                    </div>
+                </div>
+                <div class="slider-item home">
+                    <div class="product">
+                        <span>Razer Huntsman - DE - Black</span>
+                        <span class="hidden-xs">Gaming Keyboard with Razer™ Optical Switches</span>
+                        <span><a href="#">koop nu</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- start footer  -->
+        <footer class="footer">
+            <div class="cont">
+                <div>
+                    <div class="footer-r">
+                        <h4 class="footer-info">Account</h4>
+                        <ul class="footer-info-ul">
+                            <li><a class="footer-a" href="#">Accountbeheren</a></li>
+                            <li><a class="footer-a" href="#">Winkelwagen</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="footer-logo">Informatie</h4>
+                        <ul class="footer-info-ul">
+                            <li><a class="footer-a" href="./OverOns/OverOns.html">Over ons</a></li>
+                            <li><a class="footer-a" href="#">Klantenservice</a></li>
+                            <li><a class="footer-a" href="#">Betalen</a></li>
+                            <li><a class="footer-a" href="#">Verzending</a></li>
+                            <li><a class="footer-a" href="./algemeneVoorwaarden/voorwaarden.html">Algemene Voorwaarden</a></li>
+                            <li><a class="footer-a" href="./retourVoorwaarden/retour.html">Retour Voorwaarden</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-c">
+                    <span><i class="fas fa-phone-alt"></i><span id="telNr">0495826311</span><i class="fas fa-copy">Copy</i></span>
+                    <span><i class="fas fa-at"></i>Beltech@pxl.be</i><a href="mailto:rob.sannen@student.pxl.be"><i class="fas fa-envelope">Email us</i></a></span> 
+                </div>
+            </div>
+
+        </footer>
+        <!-- end footer  -->
+        <!-- start settings box -->
+        <div class="settings-box">
+            <div class="icon-parent">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="settings-container">
+                <div class="option-box">
+                    <h4>colors</h4>
+                    <ul class="colors-list">
+                        <li data-color="rgba(255, 152, 0, 1)"></li>
+                        <li data-color="#E91E63"></li>
+                        <li data-color="#009688"></li>
+                        <li data-color="#03A9F4"></li>
+                        <li class="active" data-color="#44d62c"></li>
+                    </ul>
+                </div>
+                <div class="option-box promo-spel-set">
+                    <h4>Promo spel</h4>
+                    <span data-keuze="ja" class="ja active">ja</span>
+                    <span data-keuze="nee" class="nee">nee</span>
+                </div>
+                <div class="option-box overly-background-color">
+                    <h4>helderheid</h4>
+                    <input type="range" name="points" min="0" max="9" step="1">
+                </div>
+                <div class="option-box">
+                    <h4>font family</h4>
+                    <select>
+                        <option>Sans-serif</option>
+                        <option>Segoe UI</option>
+                        <option>Tahoma</option>
+                        <option>Geneva</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- end settings box -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/promoSpel.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/global.js"></script>
+    </body>
+</html>

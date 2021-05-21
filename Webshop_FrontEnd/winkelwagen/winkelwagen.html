@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!-- <link href="../css/headsets.css" rel="stylesheet"> -->
+    <link href="winkelwagen.css" rel="stylesheet">
+    <!--library voor icones-->
+    <link href="../css/all.css" rel="stylesheet">
+    <script src="../js/colors.js"></script>
+</head>
+<body>
+    <nav class="lower-bar">
+        <input type="checkbox" id="toggler" class="toggler">
+        <label for="toggler" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <button class="searchButton" type="button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Search.." class="searchInput">
+        <ul>
+            <li><a href="../index.html" data-text="HOME">HOME</a></li>
+            <li><a href="../categorie/categorie.html?Headset" data-text="HEADSETS">HEADSETS</a></li>
+            <li><a href="../categorie/categorie.html?Toetsenbord" data-text="TOETSENBORDEN">TOETSENBORDEN</a></li>
+            <li><a href="../categorie/categorie.html?Muis" data-text="MUIZEN">MUIZEN</a></li>
+            <li><a href="../categorie/categorie.html?Laptop" data-text="LAPTOPS">LAPTOPS</a></li>
+        </ul>
+    </nav> 
+    <!-- Start quick-check-out  -->
+
+    <div id="quick-check-out"> 
+        <div>
+            <p><span class="aantal" id="quick-check-out-amount"></span> stuks:</p>
+            <p>€<span class="totPrijs" id="quick-check-out-price"></span></p>
+        </div>
+        <a href="../bevestigAccount/bevestigAccount.html">CHECKOUT</a>
+    </div>
+
+    <!-- end quick-check-out -->
+    <main id="mainSec" >
+
+        
+        <!-- <section class="sectie">
+            
+            <img src="../images/headsets/kraken-green/a-kraken-green-winkelmand.png" alt="Foto niet beschikbaar">
+            
+            <div class="details">
+                <p id="product-naam">Razer Kraken Ultimate</p>
+                <ul>
+                    <li>THX Spatial Audio</li>
+                    <li>Custom-tuned 50mm drivers</li>
+                    <li>Active noise-canceling microphone</li>
+                </ul>
+            </div>            
+            
+            
+            <div class="prijs">
+                <div class = a>
+                    <i class="fas fa-euro-sign"></i>
+                    <span id="tot-art-prijs">1200</span>
+                </div>
+                <div divb>
+                    <label for="aantal-stuks">Aantal:</label>
+                    <select id="aantal-stuks" name="aantal-stuks">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>                            <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <i id="delete" class="fas fa-trash-alt"></i>
+                </div>
+            </div>        
+            
+        </section> -->
+      
+    </main>
+    <div id="check-out">
+        <div>
+            <p>Subtotaal</p>
+            <p>€<span class="subTot"></span></p>
+        </div>
+        <div>
+            <p>Heeft u een promo code?</p>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <p>Totaal</p>
+            <p>€<span class="totPrijs" id="quick-check-out-price"></span></p>
+        </div>
+        <a href="../bevestigAccount/bevestigAccount.html">CHECKOUT</a>
+    </div>
+
+    <!-- start footer  -->
+    <footer>
+        <div class="cont">
+            <div>
+                <div class="footer-r">
+                    <h4 class="footer-info">Account</h4>
+                    <ul class="footer-info-ul">
+                        <li><a class="footer-a" href="#">Acountbeheren</a></li>
+                        <li><a class="footer-a" href="#">Winkelwagen</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-logo">Informatie</h4>
+                    <ul class="footer-info-ul">
+                        <li><a class="footer-a" href="../OverOns/OverOns.html">Over ons</a></li>
+                        <li><a class="footer-a" href="#">klantenservice</a></li>
+                        <li><a class="footer-a" href="#">Betalen</a></li>
+                        <li><a class="footer-a" href="#">Verzending</a></li>
+                        <li><a class="footer-a" href="../algemeneVoorwaarden/voorwaarden.html">Algemene voorwaarden</a></li>
+                        <li><a class="footer-a" href="../retourVoorwaarden/retour.html">Retour voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-c">
+                <span><i class="fas fa-phone-alt"></i><span id="telNr">0495826311</span><i class="fas fa-copy">Copy</i></span>
+                <span><i class="fas fa-at"></i>Beltech@pxl.be</i><a href="mailto:rob.sannen@student.pxl.be"><i class="fas fa-envelope">Email us</i></a></span> 
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="winkelwagen.js"></script>
+    <script>
+        //toggle class active on logo
+        let burger = document.querySelector('.burger');
+        if(document.body.contains(burger))
+        {
+            burger.onclick = function(){
+                Array.from(this.children).forEach((bar)=>{bar.classList.toggle('active')});
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>bel tech</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!--library voor icones-->
+    <link href="../css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="prodetails.css">
+    <script src="../js/colors.js"></script>
+</head>
+    <body>
+        <!--start upper bar-->
+        <div>
+            <nav class="upper-bar">
+                <div class="container">
+                    <div class="logo">
+                        <div class="beltech">
+                            <span>T</span><p>B</p>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li id="login">
+                                <i class="fa fa-user icoontje"></i>
+                                <ol>
+                                    <li id="acount">
+                                        <a href="#">
+                                            <i class="far fa-id-card"></i>
+                                            <span>Acount</span>
+                                        </a>
+                                    </li>
+                                    <li id="aanmelden">
+                                        <a href="../login/login.html"> 
+                                            <i class="fas fa-sign-in-alt"></i>
+                                            <span>aanmeled</span>
+                                        </a>
+                                    </li>
+                                    <li id="afmelden">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <a href="#">Afmelden</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fa fa-shopping-cart icoontje"></i>
+                                <ol>
+                                    <li>
+                                        <a href="../winkelwagen/winkelwagen.html">
+                                            <i class="fab fa-opencart"></i>
+                                            <span>cart</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-box"></i>
+                                            <span>order</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- end upper bar  -->
+        <!-- start content -->
+        <!-- start slider  -->
+        <div class="js-slider">
+            <nav class="lower-bar">
+                <input type="checkbox" id="toggler" class="toggler">
+                <label for="toggler" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <button class="searchButton" type="button"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search.." class="searchInput">
+                <ul>
+                    <li><a href="../index.html" data-text="HOME">HOME</a></li>
+                    <li><a href="../categorie/categorie.html?Headset" data-text="HEADSETS">HEADSETS</a></li>
+                    <li><a href="../categorie/categorie.html?Toetsenbord" data-text="TOETSENBORDEN">TOETSENBORDEN</a></li>
+                    <li><a href="../categorie/categorie.html?Muis" data-text="MUIZEN">MUIZEN</a></li>
+                    <li><a href="../categorie/categorie.html?Laptop" data-text="LAPTOPS">LAPTOPS</a></li>
+                </ul>
+            </nav> 
+            <!--  -->
+            <div class="slider-content">
+                <div class="details">
+                    <!-- <h2>Razer Raptor 27</h2>
+                    <div>the ultimate esports gamming monitor</div>
+                    <div>$6999.99 <span>$799.99</span><span>(13%off)</span></div>
+                    <ul>
+                        <li>Big,Bright,brillant DCI-p3 color</li>
+                        <li>Lightining Fast 144Hz Precision</li>
+                        <li>Tuned to Your comfort</li>
+                    </ul>
+                    <div>Ships next busniess day</div>
+                    <div>Add To Cart</div> -->
+                </div>
+                <div class="slider-container">
+                    <span class="prev hidden-xl"><i class="fas fa-chevron-left"></i></span>
+                    <span class="next hidden-xl"><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <article class="tech-sepcs heightBeperkt">
+            <button class="see">see more</button>
+            <div class="container">
+                <h4>tech specs</h4>
+                <div class="tech-specs-container" id="laptop">
+                    <div id="processor" class="tech-specs-box">
+                        <h4>processor</h4>
+                    </div>
+                    <div id="os" class="tech-specs-box">
+                        <h4>os</h4>
+                    </div>
+                    <div id="display" class="tech-specs-box">
+                        <h4>display</h4>
+                    </div>
+                    <div id="graphics" class="tech-specs-box">
+                        <h4>GRAPHICS</h4>
+                    </div>
+                    <div id="storage" class="tech-specs-box">
+                        <h4>storage</h4>
+                    </div>
+                    <div id="memory" class="tech-specs-box">
+                        <h4>memory</h4>
+                    </div>
+                    <div id="keyboard" class="tech-specs-box">
+                        <h4>keyboard</h4>
+                    </div>
+                    <div id="connectivity" class="tech-specs-box">
+                        <h4>connectivity</h4>
+                    </div>
+                    <div id="battery_and_adaptor" class="tech-specs-box">
+                        <h4>battery and adaptor</h4>
+                    </div>
+                    <div id="touchpad" class="tech-specs-box">
+                        <h4>touchpad</h4>
+                    </div>
+                    <div id="input_and_output" class="tech-specs-box">
+                        <h4>input_and_output</h4>
+                    </div>
+                    <div id="audio" class="tech-specs-box">
+                        <h4>audio</h4>
+                    </div>
+                    <div id="additional_features" class="tech-specs-box">
+                        <h4>addition_featuers</h4>
+                    </div>
+                    <div id="finish" class="tech-specs-box">
+                        <h4>finish</h4>
+                    </div>
+                    <div id="dimensions" class="tech-specs-box">
+                        <h4>dimensions</h4>
+                    </div>
+                    <div id="weightlp" class="tech-specs-box">
+                        <h4>weight</h4>
+                    </div>
+                </div>
+                <div class="tech-specs-container" id="muis">
+                    <div id="uitgebr_beschrijving" class="tech-specs-box">
+                        <h4>beschrijving</h4>
+                    </div>
+                    <div id="dpi" class="tech-specs-box">
+                        <h4>dpi</h4>
+                    </div>
+                    <div id="aantalknoppen" class="tech-specs-box">
+                        <h4>aantalknoppen</h4>
+                    </div>
+                    <div id="verbinding" class="tech-specs-box">
+                        <h4>verbinding</h4>
+                    </div>
+                    <div id="verlichting" class="tech-specs-box">
+                        <h4>verlichting</h4>
+                    </div>
+                    <div id="instelbaarheiddpi" class="tech-specs-box">
+                        <h4>instelbaarheiddpi</h4>
+                    </div>
+                </div>
+                <div class="tech-specs-container" id="toetsenbord">
+                    <div id="uitgebr_beschrijving" class="tech-specs-box">
+                        <h4>modelazerty</h4>
+                    </div>
+                    <div id="modelazerty" class="tech-specs-box">
+                        <h4>modelazerty</h4>
+                    </div>
+                    <div id="numeriekklavier" class="tech-specs-box">
+                        <h4>numeriekklavier</h4>
+                    </div>
+                    <div id="verbinding" class="tech-specs-box">
+                        <h4>verbinding</h4>
+                    </div>
+                    <div id="verlichting" class="tech-specs-box">
+                        <h4>verlichting</h4>
+                    </div>
+                </div>
+                <div class="tech-specs-container" id="headset">
+                    <div id="uitgebr_beschrijving" class="tech-specs-box">
+                        <h4>modelazerty</h4>
+                    </div>
+                    <div id="diameter_drivers_mm" class="tech-specs-box">
+                        <h4>diameter_drivers_mm</h4>
+                    </div>
+                    <div id="kleur" class="tech-specs-box">
+                        <h4>kleur</h4>
+                    </div>
+                    <div id="verbinding" class="tech-specs-box">
+                        <h4>verbinding</h4>
+                    </div>
+                    <div id="verlichting" class="tech-specs-box">
+                        <h4>verlichting</h4>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="cont">
+                <div>
+                    <div class="footer-r">
+                        <h4 class="footer-info">Account</h4>
+                        <ul class="footer-info-ul">
+                            <li><a class="footer-a" href="#">Acountbeheren</a></li>
+                            <li><a class="footer-a" href="#">Winkelwagen</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="footer-logo">Informatie</h4>
+                        <ul class="footer-info-ul">
+                            <li><a class="footer-a" href="../OverOns/OverOns.html">Over ons</a></li>
+                            <li><a class="footer-a" href="#">klantenservice</a></li>
+                            <li><a class="footer-a" href="#">Betalen</a></li>
+                            <li><a class="footer-a" href="#">Verzending</a></li>
+                            <li><a class="footer-a" href="../algemeneVoorwaarden/voorwaarden.html">Algemene voorwaarden</a></li>
+                            <li><a class="footer-a" href="../retourVoorwaarden/retour.html">Retour voorwaarden</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-c">
+                    <span><i class="fas fa-phone-alt"></i><span id="telNr">0495826311</span><i class="fas fa-copy">Copy</i></span>
+                    <span><i class="fas fa-at"></i>Beltech@pxl.be</i><a href="mailto:rob.sannen@student.pxl.be"><i class="fas fa-envelope">Email us</i></a></span> 
+                </div>
+            </div>
+
+        </footer>
+        <!-- end footer  -->
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="prodetails.js"></script>
+        <script src="../js/global.js"></script>
+    </body>
+</html>

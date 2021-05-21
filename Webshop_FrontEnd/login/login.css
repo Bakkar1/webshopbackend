@@ -1,0 +1,314 @@
+body{
+    font-family: var(--main-font-family);
+    margin: 0;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg,
+.visible-xl{
+    display: none !important;
+}
+.clear{
+    clear: both;
+}
+.no-clicking {
+    pointer-events: none;
+    opacity: 0.8;
+}
+:root{
+    --main-color: #44d62c;
+    --main-font-family: Tahoma;
+    --gray-color-1: #222;
+    --overly-back: rgba(0, 0, 0, 0.3);
+    --main-transition: all 0.5s ease-in-out;
+    --linear-transition: all 0.5s linear;
+    --blue-color: #3497db;
+    --rose-color: #e91e63;
+    --scroll-color: #44d62c;
+    --gray-color-2: #555555;
+    --gray-color-4: #777;
+    --gray-color-3: #999999;
+    --default-white: white;
+    --gray-color-4: #2c2c2c;
+    --gray-color-5: #d6d6d6;
+    
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    color: var(--main-color);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header span:first-of-type{
+    cursor: pointer;
+}
+.content{
+    margin-top: 50px;
+    overflow: hidden;
+    background-color: var(--gray-color-1);
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.content > div{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--main-transition);
+    padding: 10px 40px;
+}
+.content .active{
+    opacity: 1 !important;
+    z-index: 2;
+}
+.content .active .switcher{
+    transition-delay: .3s;
+    bottom: 0
+}
+.content h3{
+    margin: 10px auto;
+    color: var(--gray-color-3);
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.content form input{
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    color: white
+}
+.content form .password{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.content form .password i{
+    position: absolute;
+    color: var(--gray-color-3);
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.content form input{
+    transition: var(--main-transition);
+    border: 1px solid transparent;
+}
+.content form input:focus{
+    border: 1px solid var(--main-color) !important;
+}
+.content form input[type="button"]{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.content form input:not(:last-of-type){
+    margin-bottom: 10px;
+}
+.content .forgot-password{
+    float: right;
+    color: var(--gray-color-3);
+    margin: 10px 0;
+}
+.content .connect-with{
+    color: var(--gray-color-3);
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.register-form .forgot-password{
+    visibility: hidden;
+}
+.content .connect-with::after,
+.content .connect-with::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--gray-color-3);
+    width: 20%;
+    height: 2px;
+}
+.content .connect-with::before{
+    left: 20px;
+}
+.content .connect-with::after{
+    right: 20px;
+}
+.content .connect-mog{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.content .connect-mog i{
+    font-size: 30px;
+    transition: var(--main-transition);
+    cursor: pointer;
+    color: var(--gray-color-3);
+}
+.content .connect-mog i:hover{
+    color: var(--main-color)
+}
+.content .connect-mog a:not(:last-of-type){
+    margin-right: 30px;
+}
+.switcher{
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--gray-color-3);
+    width: fit-content;
+    margin: 50px auto;
+    cursor: pointer;
+    position: relative;
+    bottom: -100%;
+    transition: all .2s ease-in-out;
+}
+.register-form > a:last-of-type{
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--gray-color-3);
+    width: fit-content;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--gray-color-1);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/*  */
+
+/* start global media */
+@media ( max-width : 575px)
+{
+    .visible-xs
+    {
+        display: flex !important;
+    }
+    .hidden-xs
+    {
+        display: none !important;
+    }
+    body{
+        background-color: var(--gray-color-1);
+    }
+}
+@media ( min-width : 576px) and (max-width : 767pc)
+{
+    body{
+        background-color: var(--gray-color-1);
+    }
+}
+@media ( min-width : 576px)
+{
+    .visible-sm
+    {
+        display: flex !important;
+    }
+    .hidden-sm
+    {
+        display: none !important;
+    }
+}
+@media (min-width : 768px)
+{
+    body{
+        height: 100vh;
+        background-image: url('back.jpg');
+        background-color: var(--overly-back);
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .visible-md
+    {
+        display: flex !important;
+    }
+    .hidden-md
+    {
+        display: none !important;
+    }
+    header{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    .content{
+        background-color: var(--gray-color-1);
+        position: absolute;
+        height: 600px;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 0;
+        border-radius: 10px;
+        padding: 20px 50px;
+        margin-top: 0;
+    }
+    footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: var(--main-color);
+        z-index: 2;
+        background-color: transparent;
+    }
+}
+@media (min-width : 992px)
+{
+    .visible-lg
+    {
+        display: flex !important;
+    }
+    .hidden-lg
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width : 1200px)
+{
+    .visible-xl
+    {
+        display: flex !important;
+    }
+    .hidden-xl
+    {
+        display: none !important;
+    }
+}

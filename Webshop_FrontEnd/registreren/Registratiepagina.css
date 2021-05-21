@@ -1,0 +1,270 @@
+/* start global */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font-family);
+    /* background-image: url("../login/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--overly-back);
+    background-blend-mode: overlay; */
+}
+.no-clicking {
+    pointer-events: none;
+    opacity: 0.8;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serifd;
+}
+.no-clicking{
+    pointer-events: none;
+    opacity: .8;
+}
+.disable{
+    pointer-events: none;
+    opacity: .5;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg,
+.visible-xl{
+    display: none !important;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* root is de hoogste element in de pagina */
+:root{
+    --main-color: #44d62c;
+    --main-font-family: Tahoma;
+    --gray-color-1: #222;
+    --overly-back: rgba(0, 0, 0, 0.3);
+    --main-transition: all 0.5s ease-in-out;
+    --linear-transition: all 0.5s linear;
+    --blue-color: #3497db;
+    --rose-color: #e91e63;
+    --scroll-color: #44d62c;
+    --gray-color-2: #555555;
+    --gray-color-4: #777;
+    --gray-color-3: #999999;
+    --default-white: white;
+    --gray-color-4: #2c2c2c;
+    --gray-color-5: #d6d6d6;
+    font-family: var(--main-font-family);
+}
+
+.enable{
+    color: var(--main-color) !important;
+}
+/*----------------*/
+
+/* .lower-bar{
+    position: absolute;
+    top: 50px;
+} */
+/* start header  */
+header{
+    color: var(--main-color);
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+    font-size: 20px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    background-color: transparent !important;
+}
+header span{
+    color: var(--main-color)
+}
+header span:first-of-type{
+    cursor: pointer;
+}
+/* end header  */
+main .registratiecontainer{
+    margin: 60px auto;
+    position: relative;
+
+}
+main{
+
+}
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    justify-content: flex-start;
+    background-color: var(--gray-color-1);
+    padding: 1%;
+    margin: 20px;
+}
+fieldset legend{
+    color: black;
+}
+input{
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    color: white
+}
+.invoerlang{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 1%;
+}
+.invoerlang input{
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+
+#voorwaarden{height: 20px;
+display: inline;
+width: 20px;
+margin: 0 15px;}
+
+.voorwaardendiv{display: flex;
+flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#invoerhuisnummer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+select{
+    display: inline-block;
+    height: 40px;
+    outline: none;
+    border: none;
+
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    color: white
+}
+input[type="button"]
+{
+    background-color: var(--main-color);
+    margin: auto;
+    text-align: center;
+
+}
+
+footer{
+    text-align: center;
+    color: var(--main-color) !important;
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+/* start global media */
+@media ( max-width : 575px)
+{
+    .visible-xs
+    {
+        display: flex !important;
+    }
+    .hidden-xs
+    {
+        display: none !important;
+    }
+    body{
+        background-color: var(--gray-color-1) !important;
+    }
+}
+@media ( min-width : 576px) and (max-width : 767pc)
+{
+    body{
+        background-color: var(--gray-color-1) !important;
+    }
+}
+@media ( min-width : 576px)
+{
+    .visible-sm
+    {
+        display: flex !important;
+    }
+    .hidden-sm
+    {
+        display: none !important;
+    }
+}
+@media (min-width : 768px)
+{
+    body{
+        background-image: url('../login/back.jpg');
+        background-color: var(--overly-back) !important;
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .visible-md
+    {
+        display: flex !important;
+    }
+    .hidden-md
+    {
+        display: none !important;
+    }
+    header{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    footer{
+        /* position: absolute;
+        left: 0;
+        bottom: 0; */
+        width: 100%;
+        text-align: center;
+        color: var(--main-color);
+        z-index: 2;
+        background-color: transparent;
+    }
+}
+@media (min-width : 992px)
+{
+    .invoerlang {
+        width: 48%;
+    }
+    .visible-lg
+    {
+        display: flex !important;
+    }
+    .hidden-lg
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width : 1200px)
+{
+    .visible-xl
+    {
+        display: flex !important;
+    }
+    .hidden-xl
+    {
+        display: none !important;
+    }
+}
