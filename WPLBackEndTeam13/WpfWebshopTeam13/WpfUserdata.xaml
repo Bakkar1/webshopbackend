@@ -1,0 +1,70 @@
+﻿<Window x:Class="WpfWebshopTeam13.WpfUserdata"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWebshopTeam13"
+        mc:Ignorable="d"
+        Title="WpfUserdata_1" Height="575" Width="1500" Loaded="Window_Loaded">
+    <Grid>
+        <WrapPanel>
+            <StackPanel>
+
+                <WrapPanel>
+                    <Label Width="150" Content="Voornaam" Margin="5"></Label>
+                    <TextBox x:Name="TxtVoornaam" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Naam" Margin="5"></Label>
+                    <TextBox x:Name="TxtNaam" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="E-mail" Margin="5"></Label>
+                    <TextBox x:Name="TxtEmail" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Telefoon" Margin="5"></Label>
+                    <TextBox x:Name="TxtTelefoon" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Straatnaam" Margin="5"></Label>
+                    <TextBox x:Name="TxtStraat" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Huisnummer" Margin="5"></Label>
+                    <TextBox x:Name="TxtHuisnummer" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Postcode" Margin="5"></Label>
+                    <TextBox x:Name="TxtPostcode" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Plaats" Margin="5"></Label>
+                    <TextBox x:Name="TxtPlaats" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Land" Margin="5"></Label>
+                    <TextBox x:Name="TxtLand" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label Width="150" Content="Wachtwoord" Margin="5"></Label>
+                    <TextBox x:Name="TxtWachtwoord" Width="150" Margin="5"></TextBox>
+                </WrapPanel>
+                <!--<WrapPanel>
+                    <Label Width="150" Content="Aangemaakt" Margin="5"></Label>
+                    <DatePicker x:Name="DtmAangemaakt" Margin="5" Width="150"></DatePicker>
+                </WrapPanel>-->
+
+                <Button x:Name="BtnCommand" Content="Toevoegen" Width="75" HorizontalAlignment="Left" Margin="10" Click="BtnCommand_Click" ></Button>
+                <Label x:Name="LblKlantnummer"></Label>
+                <Button x:Name="BtnUpdate" Visibility="Hidden" Content="Wijzigen" Width="75" HorizontalAlignment="Left" Margin="10" Click="BtnUpdate_Click" ></Button>
+            
+                
+            </StackPanel>
+            <StackPanel>
+                <DataGrid x:Name="DgdUserdata_1" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="1000" Margin="20" SelectionChanged="DgdUserdata_1_SelectionChanged" />
+
+            </StackPanel>
+        </WrapPanel>
+    </Grid>
+</Window>

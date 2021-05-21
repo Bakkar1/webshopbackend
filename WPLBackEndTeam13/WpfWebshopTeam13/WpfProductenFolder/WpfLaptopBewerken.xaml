@@ -1,0 +1,258 @@
+﻿<Window x:Class="WpfWebshopTeam13.WpfLaptopBewerken"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWebshopTeam13"
+        mc:Ignorable="d"
+        Title="Beltech - Laptop bewerken" WindowState="Maximized" Height="1080" Width="1920" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Viewbox Stretch="UniformToFill" ClipToBounds="True">
+        <Grid>
+
+            <StackPanel HorizontalAlignment="Center" Height="1080" Width="1920"  >
+                <Label Content="Categorie: Laptop" FontSize="20" Margin="20,15,20,0"/>
+                <WrapPanel >
+                    <StackPanel Width="600" Margin="20">
+
+
+                        <Label Content="Producttype"   FontSize="16"/>
+                        <TextBox x:Name="TxtProducttypeLaptops" Margin="0,0,0,10" TextWrapping="Wrap" FontSize="16" Text="" MaxLength="59" />
+                        <WrapPanel Margin="0,0,0,10">
+                            <StackPanel Width="300" >
+                                <Label Content="Basisprijs"  FontSize="16"/>
+                                <TextBox x:Name="TxtPrijsLaptops"  TextWrapping="Wrap" Text=""  FontSize="16" MaxLength="8" Margin="0,0,20,0"/>
+                            </StackPanel>
+                            <StackPanel Width="300">
+                                <Label Content="Korting" FontSize="16" />
+                                <TextBox x:Name="TxtKortingLaptops"  TextWrapping="Wrap" Text="" FontSize="16"  MaxLength="8"/>
+                            </StackPanel>
+                        </WrapPanel>
+                        <Label Content="Uitgebreide beschrijving" FontSize="16" />
+                        <TextBox x:Name="TxtUitgebreideBeschrijvingLaptops" Height="150" FontSize="16" Margin="0,0,0,10" TextWrapping="Wrap" Text="" MaxLength="3998" />
+                        <Label Content="Korte beschrijving" FontSize="16" />
+                        <TextBox x:Name="TxtKleineBeschrijvingLaptops" Margin="0,0,0,10" Height="54" TextWrapping="Wrap" Text="" FontSize="16" MaxLength="999" />
+                        <WrapPanel Margin="0,0,0,10">
+                            <StackPanel Width="300" >
+                                <Label Content="Kleur"  FontSize="16"/>
+                                <TextBox x:Name="TxtKleurLaptops"  TextWrapping="Wrap" Text=""  FontSize="16" Margin="0,0,20,0" MaxLength="19"/>
+                            </StackPanel>
+                            <StackPanel Width="300">
+                                <Label Content="Voorraad" FontSize="16" />
+                                <TextBox x:Name="TxtVoorraadLaptops" MaxLength="9" TextWrapping="Wrap" Text="" FontSize="16" />
+                            </StackPanel>
+                        </WrapPanel>
+
+                        <Label Content="Afbeeldingen" FontSize="16"/>
+                        <TextBox x:Name="TxtImagesLaptops" Margin="0,0,0,10"  TextWrapping="Wrap" Text="" Height="150" FontSize="16" MaxLength="999"/>
+
+
+                        <Label Content="Besturingssysteem"  FontSize="16"/>
+                        <TextBox x:Name="TxtOS"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" FontSize="16" MaxLength="29"/>
+                        <Label Content="Processor" FontSize="16"/>
+                        <TextBox x:Name="TxtProcessor"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" Height="54" FontSize="16" MaxLength="299"/>
+                        <Label Content="Geheugen" FontSize="16"/>
+                        <TextBox x:Name="TxtMemory"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" FontSize="16" MaxLength="99"/>
+
+                    </StackPanel>
+                    <StackPanel Width="600" Margin="20">
+
+                        <Label Content="Videokaart"  FontSize="16"/>
+                        <TextBox x:Name="TxtGraphics"  TextWrapping="Wrap" Text=""  FontSize="16" Margin="0,0,0,10" MaxLength="299" Height="74"/>
+                        <Label Content="Opslagruimte"  FontSize="16"/>
+                        <TextBox x:Name="TxtStorage"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="99" Height="54"/>
+                        <Label Content="Scherm" FontSize="16" />
+                        <TextBox x:Name="TxtDisplay"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="99" Height="54"/>
+                        <Label Content="Toetsenbord"  FontSize="16"/>
+                        <TextBox x:Name="TxtKeyboard"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="99" Height="54"/>
+                        <Label Content="Connectiviteit"  FontSize="16"/>
+                        <TextBox x:Name="TxtConnectivity"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16"  MaxLength="199" Height="54"/>
+                        <Label Content="Accu en adapter" FontSize="16"/>
+                        <TextBox x:Name="TxtBattery_and_adaptor"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="99" Height="74"/>
+
+
+                        <Label Content="Touchpad"  FontSize="16"></Label>
+                        <TextBox x:Name="TxtTouchpad"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" FontSize="16" MaxLength="99"/>
+                        <Label Content="Poorten"  FontSize="16"/>
+                        <TextBox x:Name="TxtInput_and_output"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="299" Height="100"/>
+                        <Label Content="Audio" FontSize="16"/>
+                        <TextBox x:Name="TxtAudio"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" FontSize="16" MaxLength="299" Height="54"/>
+
+                    </StackPanel>
+                    <StackPanel Width="600" Margin="20">
+                        <Image x:Name="ImgVoorbeeldl" Stretch="Uniform" Source="/AssetsWpf/loadingscreen.png" Width="590" Height="393" Margin="30,30,30,10"/>
+                        <WrapPanel HorizontalAlignment="Center">
+                            <Button x:Name="Img8" Click="Img8_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img9" Click="Img9_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img10" Click="Img10_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img11" Click="Img11_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img12" Click="Img12_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img13" Click="Img13_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                            <Button x:Name="Img14" Click="Img14_Click" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border>
+                                                        <Image Source="{TemplateBinding Content}" Width="70" Height="47"  Margin="7" />
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Content">
+                                            <Setter.Value>
+                                                <BitmapImage UriSource=""/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+
+                            <!--<Image x:Name="Img1" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>-->
+                            <!--<Image x:Name="Img2" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>-->
+                            <!--<Image x:Name="Img3" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>
+                        <Image x:Name="Img4" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>
+                        <Image x:Name="Img5" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>
+                        <Image x:Name="Img6" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>
+                        <Image x:Name="Img7" Width="70" Source="AssetsWpf/testimage.jpg" Margin="7" ></Image>-->
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Center">
+                            <Button  x:Name="BtnLaptopBewerken" Content="Opslaan" Height="34" Margin="10" Width="150"  FontSize="16" Click="BtnLaptopBewerken_Click" />
+                            <Button x:Name="BtnTerug" Content="Terug"  Height="34" Margin="10" Width="150" FontSize="16" Click="BtnTerug_Click"></Button>
+                            <Button x:Name="BtnBlader" Content="Zoek foto's" Height="34" Margin="10" Width="150" FontSize="16" Click="BtnBlader_Click"></Button>
+                        </WrapPanel>
+                        <WrapPanel HorizontalAlignment="Center">
+                            <Button x:Name="BtnRefresh" Content="Refresh" Height="34" Margin="10" Width="150" FontSize="16" Click="BtnRefresh_Click"></Button>
+                        </WrapPanel>
+
+                        <Label Content="Bijkomende kenmerken"  FontSize="16"/>
+                        <TextBox x:Name="TxtAdditional_features" Margin="0,0,0,10"  TextWrapping="Wrap" Text=""  FontSize="16" MaxLength="299" Height="100"/>
+                        <Label Content="Finish"  FontSize="16"/>
+                        <TextBox x:Name="TxtFinish"  TextWrapping="Wrap" Text="" Margin="0,0,0,10"  FontSize="16" MaxLength="99"/>
+                        <Label Content="Afmetingen"  FontSize="16"/>
+                        <TextBox x:Name="TxtDimensions"  TextWrapping="Wrap" Text="" Margin="0,0,0,10" FontSize="16" MaxLength="40"/>
+                        <Label Content="Gewicht"  FontSize="16"/>
+                        <TextBox x:Name="TxtWeightlp"  TextWrapping="Wrap" Text=""  FontSize="16" MaxLength="40"/>
+                        
+                    </StackPanel>
+                </WrapPanel>
+
+            </StackPanel>
+
+        </Grid>
+    </Viewbox>
+</Window>
