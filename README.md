@@ -1,5 +1,8 @@
 ### Ontwikkeld door M'Bark Bakkar ###
 
+Om te zorgen dat de frontend goed zal werken zou u beter de bestand index.html openen met een live server
+'er bestaat een extentie voor in Visual Studio Code'
+
 # FrontEnd
 =>  acount pagina met all de bijhorende css en js bestanden
 =>  categorie pagina met all de bijhorende css en js bestanden
