@@ -8,6 +8,7 @@
 =>  login pagina met all de bijhorende css en js bestanden
 =>  prodetails pagina met all de bijhorende css en js bestanden
 =>  index.html behalve de footer en de lower bar
+=>  settings box
 =>  all de animatie binnen de website
 
 # BackEnd
